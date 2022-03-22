@@ -6,6 +6,11 @@ import SignupPage1 from "./pages/LoginSignup/Relative/SignupPage";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Relative from "./Interfaces/Relative/Relative";
+import NotFound from "./components/NotFound";
+import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
 
@@ -22,6 +27,9 @@ function App() {
       <Route exact path="/admin/signup" element={<SignupPage />} />
       <Route exact path="/relative/signup" element={<SignupPage1 />} />
       <Route exact path="/relative/login" element={<LoginPage1 />} />
+      <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/relative" element={<Relative />} />
+          <Route path="*" element={<NotFound />} />
       </Routes>
       
       </Router>

@@ -1,0 +1,35 @@
+.rightBox{
+    min-height: 90vh;
+    min-width: 50vw;
+    background-image: url(../../Assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    background-position: center;
+    background-position-x: 0rem;
+    background-position-y: -4.5rem;
+    z-index: 10;
+  }
+  .leftBox{
+    min-height: 89vh;
+    min-width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text{
+    align-items: center;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  @media screen and (min-width: 368px) and (max-width: 768px){
+    .rightBox{
+        display: none;
+    }
+    .leftBox{
+        min-width: 89vh;
+        justify-content: center;
+    }
+  }
