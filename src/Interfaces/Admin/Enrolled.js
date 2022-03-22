@@ -2,6 +2,10 @@ import React from "react";
 import HeaderAdmin from "./HeaderAdmin";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
+import {
+  CardActionArea,
+  Box,
+} from "@mui/material";
 
 const Enrolled = () => {
   const [card, setCard] = useState([]);
@@ -35,85 +39,37 @@ const Enrolled = () => {
     <div>
       <HeaderAdmin activePage="Enrolled" />
 
-      <Grid
-        container
-        display="flex"
-        flexDirection="row"
-        direction="row"
-        justify="center"
-        justifyContent="space-evenly"
-        alignItems="flex-start"
-      >
-        <div style={{ display: "inline" }}>
-          <Typography variant="h5">Patient Name</Typography>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignItems="center"
-            style={{ gap: 45, marginTop: 10 }}
-          >
-            {card.map((card, index) => {
-              return (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <Card
-                    variant="outlined"
-                    style={{ backgroundColor: "#ffeee4" }}
-                  >
-                    <CardContent>{card.name}</CardContent>
-                  </Card>
-                </Grid>
-              );
-            })}
-          </Grid>
-        </div>
-        <div style={{ display: "inline" }}>
-          <Typography variant="h5">Relatives Enrolled</Typography>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignItems="center"
-            style={{ gap: 45, marginTop: 10 }}
-          >
-            {card.map((card, index) => {
-              return (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <Card
-                    variant="outlined"
-                    style={{ backgroundColor: "#888bd2" }}
-                  >
-                    <CardContent>{card.relatives}</CardContent>
-                  </Card>
-                </Grid>
-              );
-            })}
-          </Grid>
-        </div>
-        <div style={{ display: "inline" }}>
-          <Typography variant="h5">Code</Typography>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignItems="center"
-            style={{ gap: 45, marginTop: 10 }}
-          >
-            {card.map((card, index) => {
-              return (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <Card
-                    variant="outlined"
-                    style={{ backgroundColor: "#fb3b30" }}
-                  >
-                    <CardContent>{card.id}</CardContent>
-                  </Card>
-                </Grid>
-              );
-            })}
-          </Grid>
-        </div>
-      </Grid>
+      <Box ml={5} mr={5} pl={7} pr={3} mt={3} pt={3} mb={1} pb={1}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          {card.map((card, _) => {
+            return (
+              <Grid item xs={12} sm={6} md={6} lg={3} key={card.id}>
+                    <Card
+                      variant="outlined"
+                      sx={{ maxWidth: 345 }}
+                      className="enrolledCard"
+                    >
+                      <CardContent>
+                        <Typography variant="h6" align="center" className="enrolledName">
+                          <span style={{color:"black"}}>Patient Name: </span> {card.name}
+                        </Typography>
+                        <Typography variant="h6" align="center" className="enrolledName">
+                        <span style={{color:"black"}}>Relative Name: </span>{card.relatives}
+                        </Typography>
+                        <Typography variant="h6" align="center" className="enrolledName">
+                        <span style={{color:"black"}}>Patient Code: </span>{card.id}
+                        </Typography>
+                      </CardContent>
+                    </Card>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
     </div>
   );
 };
