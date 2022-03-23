@@ -7,13 +7,15 @@
     overflow:hidden;
     background-position: center;
     background-position-x: 0rem;
-    background-position-y: -4.5rem;
+    background-position-y: -2.6rem;
     z-index: 10;
   }
   .leftBox{
+    padding-top: 180px;
+    padding-left: 30px;
     min-height: 89vh;
     min-width: 45vw;
-    display: flex;
+    display: table-column;
     justify-content: center;
     align-items: center;
   }

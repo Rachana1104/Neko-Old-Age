@@ -14,6 +14,12 @@ import NotFound from "./components/NotFound";
 import HomePage from "./pages/HomePage/HomePage";
 import PatientDetails from "./Interfaces/Admin/PatientDetails";
 import VideoChat from "./components/VideoChat";
+import HomePage from "./Pages/HomePage/HomePage";
+import Create from "./Interfaces/Admin/Create";
+import View from "./Interfaces/Admin/View";
+import Edit from "./Interfaces/Admin/Edit";
+import PatientDetails from "./Interfaces/Admin/PatientDetails";
+import Enrolled from "./Interfaces/Admin/Enrolled";
 
 function App() {
 
@@ -25,20 +31,26 @@ function App() {
     <div className="App">
       <Router>
       <Routes>
-
       <Route exact path="/admin/login" element={<LoginPage />} />
       <Route exact path="/admin/signup" element={<SignupPage />} />
       <Route exact path="/relative/signup" element={<SignupPage1 />} />
       <Route exact path="/relative/login" element={<LoginPage1 />} />
       <Route exact path="/" element={<HomePage />} />
-      <Route exact path="/admin/chat" element={<Chat />} />
-      <Route exact path="/relative/chat" element={<Chat1 />} />
+      <Route exact path="/create" element={<Create />} />
+        <Route exact path="/view" element={<View />} />
+        <Route exact path="/edit/:name/:id" element={<Edit />} />
+        <Route
+          exact
+          path="/view/:name/:id"
+          element={<PatientDetails/>}
+        />
+        <Route exact path="/enrolled" element={<Enrolled />} />
+        <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/view/:name/:id" element={<PatientDetails />} />
       <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
       </Routes>
-      
       </Router>
     </div>
   );
