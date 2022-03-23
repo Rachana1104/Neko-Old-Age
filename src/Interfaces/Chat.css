@@ -1,0 +1,13 @@
+.ce-message-bubble, .ce-primary-button, #ce-send-message-button{
+    background-color:#019267 !important;
+}
+.ce-my-message, .ce-message-row, .ce-message-date-text, .ce-chat-title-container, .ql-toolbar, #ce-delete-chat-button{
+    background-color: #C1F8CF !important;
+}
+.ce-chat-subtitle-text, .ce-chat-title-text, .ce-chat-list>div, .ce-input, .ce-section-title-container>div, #ce-options-drop-down>div{
+    color: #019267 !important;
+}
+.ce-message-date-text{
+    color: #019267 !important;
+    font-weight: 400;
+}
