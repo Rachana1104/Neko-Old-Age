@@ -7,7 +7,7 @@ import {
   CardContent,
   CardMedia,
 } from "@mui/material";
-import green from "../../assets/green.png";
+import green from "../../Assets/green.png";
 import { BiFoodMenu } from "react-icons/bi";
 import {GiHealthNormal, GiMedicines} from 'react-icons/gi';
 import {AiFillSchedule} from 'react-icons/ai';
