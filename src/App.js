@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./Pages/LoginSignup/Admin/LoginPage";
-import SignupPage from "./Pages/LoginSignup/Admin/SignupPage";
-import LoginPage1 from "./Pages/LoginSignup/Relative/LoginPage";
-import SignupPage1 from "./Pages/LoginSignup/Relative/SignupPage";
+import LoginPage from "./pages/LoginSignup/Admin/LoginPage";
+import SignupPage from "./pages/LoginSignup/Admin/SignupPage";
+import LoginPage1 from "./pages/LoginSignup/Relative/LoginPage";
+import SignupPage1 from "./pages/LoginSignup/Relative/SignupPage";
+import Chat from './Interfaces/Admin/Chat';
+import Chat1 from "./Interfaces/Relative/Chat";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';

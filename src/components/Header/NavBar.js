@@ -19,14 +19,16 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import "./Header.css";
-import logo from "../../Assets/logo.jpg";
-
+import logo from "../../assets/logo.gif";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 const NavBar = (activePage) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [login, setLogin] = React.useState("");
   const [signup] = React.useState("");
-
+  
   const handleChange = (event) => {
     setLogin(event.target.value);
   };

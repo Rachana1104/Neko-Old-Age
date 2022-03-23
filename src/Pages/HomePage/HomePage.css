@@ -1,7 +1,7 @@
 .rightBox{
     min-height: 90vh;
     min-width: 50vw;
-    background-image: url(../../Assets/home.jpg);
+    background-image: url(../../assets/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
