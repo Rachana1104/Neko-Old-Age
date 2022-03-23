@@ -32,7 +32,7 @@ function App() {
       <Route exact path="/admin/chat" element={<Chat />} />
       <Route exact path="/relative/chat" element={<Chat1 />} />
       <Route exact path="/relative" element={<Relative />} />
-          <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
       </Routes>
       
       </Router>
