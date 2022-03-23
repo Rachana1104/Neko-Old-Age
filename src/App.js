@@ -3,14 +3,15 @@ import LoginPage from "./pages/LoginSignup/Admin/LoginPage";
 import SignupPage from "./pages/LoginSignup/Admin/SignupPage";
 import LoginPage1 from "./pages/LoginSignup/Relative/LoginPage";
 import SignupPage1 from "./pages/LoginSignup/Relative/SignupPage";
+import Chat from './Interfaces/Admin/Chat';
+import Chat1 from "./Interfaces/Relative/Chat";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Relative from "./Interfaces/Relative/Relative";
 import NotFound from "./components/NotFound";
-import HomePage from "./Pages/HomePage/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
 
@@ -28,8 +29,10 @@ function App() {
       <Route exact path="/relative/signup" element={<SignupPage1 />} />
       <Route exact path="/relative/login" element={<LoginPage1 />} />
       <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/relative" element={<Relative />} />
-          <Route path="*" element={<NotFound />} />
+      <Route exact path="/admin/chat" element={<Chat />} />
+      <Route exact path="/relative/chat" element={<Chat1 />} />
+      <Route exact path="/relative" element={<Relative />} />
+      <Route path="*" element={<NotFound />} />
       </Routes>
       
       </Router>
