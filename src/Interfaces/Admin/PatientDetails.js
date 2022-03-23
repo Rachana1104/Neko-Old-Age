@@ -1,33 +1,34 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import {
-  Grid,
-  Typography,
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-} from "@mui/material";
-import green from "../../assets/green.png";
-import { BiFoodMenu } from "react-icons/bi";
-import {GiHealthNormal, GiMedicines} from 'react-icons/gi';
-import {AiFillSchedule} from 'react-icons/ai';
-import {FaAllergies, FaBirthdayCake} from 'react-icons/fa';
-import {ImListNumbered} from 'react-icons/im';
-import {BsFillPeopleFill} from 'react-icons/bs';
+    Grid,
+    Typography,
+    Box,
+    Card,
+    CardContent,
+    CardMedia,
+  } from "@mui/material";
+  import green from "../../assets/green.png";
+  import { BiFoodMenu } from "react-icons/bi";
+  import {GiHealthNormal, GiMedicines} from 'react-icons/gi';
+  import {AiFillSchedule} from 'react-icons/ai';
+  import {FaAllergies, FaBirthdayCake} from 'react-icons/fa';
+  import {ImListNumbered} from 'react-icons/im';
+  import {BsFillPeopleFill} from 'react-icons/bs';
+  
 
+export default function PatientDetails() {
+  //console.log(data);
+  const { id } = useParams();
 
-export default function Relative() {
   const [card, setCard] = useState([]);
-
-  const patient = localStorage.getItem("id");
-  console.log(patient);
 
   useEffect(() => {
     (async () => {
-      let patientData;
+      let patientName;
       try {
         let response = await fetch(
-          `http://hackathonwork.pythonanywhere.com/updates/retrieve/${patient}`,
+          `http://hackathonwork.pythonanywhere.com/updates/retrieve/${id}`,
           {
             method: "GET",
             headers: {
@@ -36,15 +37,16 @@ export default function Relative() {
             },
           }
         );
-        patientData = await response.json();
-        // console.log(itemData);
+        patientName = await response.json();
+        console.log(patientName);
       } catch (error) {
         console.log("Error" + error);
-        patientData = [];
+        patientName = [];
       }
-      setCard(patientData.data);
+
+      setCard(patientName.data);
     })();
-  }, [patient]);
+  }, [id]);
 
   return (
     <>

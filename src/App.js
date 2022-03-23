@@ -12,6 +12,8 @@ import "./App.css";
 import Relative from "./Interfaces/Relative/Relative";
 import NotFound from "./components/NotFound";
 import HomePage from "./pages/HomePage/HomePage";
+import PatientDetails from "./Interfaces/Admin/PatientDetails";
+import VideoChat from "./components/VideoChat";
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
       <Route exact path="/admin/chat" element={<Chat />} />
       <Route exact path="/relative/chat" element={<Chat1 />} />
       <Route exact path="/relative" element={<Relative />} />
+      <Route exact path="/view/:name/:id" element={<PatientDetails />} />
+      <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
       </Routes>
       
