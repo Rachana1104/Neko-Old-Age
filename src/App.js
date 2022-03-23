@@ -11,6 +11,9 @@ import {useEffect} from 'react';
 import "./App.css";
 import Relative from "./Interfaces/Relative/Relative";
 import NotFound from "./components/NotFound";
+import HomePage from "./pages/HomePage/HomePage";
+import PatientDetails from "./Interfaces/Admin/PatientDetails";
+import VideoChat from "./components/VideoChat";
 import HomePage from "./Pages/HomePage/HomePage";
 import Create from "./Interfaces/Admin/Create";
 import View from "./Interfaces/Admin/View";
@@ -44,6 +47,8 @@ function App() {
         <Route exact path="/enrolled" element={<Enrolled />} />
         <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/relative" element={<Relative />} />
+      <Route exact path="/view/:name/:id" element={<PatientDetails />} />
+      <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
       </Routes>
       </Router>
