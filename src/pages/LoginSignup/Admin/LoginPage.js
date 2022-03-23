@@ -1,6 +1,6 @@
 import "../LoginSignup.css";
 import { Grid } from "@mui/material";
-import illustration1 from '../../../assets/loginSignup.svg';
+import illustration1 from '../../../Assets/loginSignup.svg';
 import Login from "../../../auth/Admin/Login";
 
 export default function LoginPage() {

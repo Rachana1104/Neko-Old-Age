@@ -23,13 +23,12 @@ import logo from "../../assets/logo.gif";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-
 const NavBar = (activePage) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [login, setLogin] = React.useState("");
   const [signup] = React.useState("");
-
+  
   const handleChange = (event) => {
     setLogin(event.target.value);
   };
@@ -37,8 +36,6 @@ const NavBar = (activePage) => {
   let value = {
     home: false,
     events: false,
-    Committee: false,
-    contactUS: false,
   };
   let page = activePage.activePage.activePage;
   if (page === "Home") value.home = true;
@@ -109,31 +106,13 @@ const NavBar = (activePage) => {
             </ListItem>
           </Link>
         ))}
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Login</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={login}
-            label="Login"
-            onChange={handleChange}
-            style={{fontWeight:"bold"}}
-          >
-            <Link to="/loginforadmin">
-              <MenuItem value={10}>Admin</MenuItem>
-            </Link>
-            <Link to="/loginforrelative">
-              <MenuItem value={20}>Relative</MenuItem>
-            </Link>
-          </Select>
-        </FormControl>
       </List>
     </Box>
   );
 
   return (
     <AppBar
-      style={{ background: "transparent", boxShadow: "none" }}
+      style={{ background: "transparent", boxShadow: "none",backgroundColor:"#FFD365" }}
       position="sticky"
     >
       <Container maxWidth="l">
@@ -197,7 +176,7 @@ const NavBar = (activePage) => {
           </Typography>
           <Box
             sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }}
-            style={{ justifyContent: "center", paddingRight:"200px",zIndex:"-1.5rem" }}
+            style={{justifyContent:"right", zIndex:"-1.5rem", paddingRight:"50px" }}
           >
             <span className="navLinks" style={{ whiteSpace:"nowrap", display:"flex", flexDirection:"row" }}>
               <Link disabled={value.home}  to="/">
@@ -212,52 +191,7 @@ const NavBar = (activePage) => {
               >
                 <button className="btn">Donate</button>
               </a>
-              <Box sx={{ minWidth: 120 }}>
-              <FormControl fullWidth variant="filled">
-                <InputLabel id="demo-simple-select-label" style={{fontWeight:"700", color:"black", fontSize:"1.2rem"}}>LOGIN</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={login}
-                  label="Login"
-                  onChange={handleChange}
-                  style={{ backgroundColor:"#ffc619" }}
-                >
-                  <Link to="/loginforadmin" style={{ textDecoration: "none" }}>
-                    <MenuItem value={10} style={{color:"black"}}>Admin</MenuItem>
-                  </Link>
-                  <Link
-                    to="/loginforrelative"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <MenuItem value={20} style={{color:"black"}}>Relative</MenuItem>
-                  </Link>
-                </Select>
-              </FormControl>
-              {/* </Box>
-              <Box sx={{ minWidth: 120 }}> */}
-              <FormControl fullWidth variant="filled">
-                <InputLabel id="demo-simple-select-label" style={{fontWeight:"700", color:"black", fontSize:"1.2rem"}}>SIGNUP</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={signup}
-                  label="Signup"
-                  onChange={handleChange}
-                  style={{ backgroundColor:"#ffc619" }}
-                >
-                  <Link to="/signupforadmin" style={{ textDecoration: "none" }}>
-                    <MenuItem value={10} style={{color:"black"}}>Admin</MenuItem>
-                  </Link>
-                  <Link
-                    to="/signupforrelative"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <MenuItem value={20} style={{color:"black"}}>Relative</MenuItem>
-                  </Link>
-                </Select>
-              </FormControl>
-              </Box>
+              
             </span>
           </Box>
 
