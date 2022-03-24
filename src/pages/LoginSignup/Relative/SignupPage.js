@@ -14,7 +14,7 @@ export default function SignupPage() {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            marginTop="100px"
+            marginTop="80px"
           >
             <img src={illustration1} alt="login" className="illustration" />
           </Grid>
