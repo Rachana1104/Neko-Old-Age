@@ -1,17 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginSignup/Admin/LoginPage";
-import SignupPage from "./pages/LoginSignup/Admin/SignupPage";
-import LoginPage1 from "./pages/LoginSignup/Relative/LoginPage";
-import SignupPage1 from "./pages/LoginSignup/Relative/SignupPage";
-import Chat from './Interfaces/Admin/Chat';
-import Chat1 from "./Interfaces/Relative/Chat";
+import LoginPage from "./Pages/LoginSignup/Admin/LoginPage";
+import SignupPage from "./Pages/LoginSignup/Admin/SignupPage";
+import LoginPage1 from "./Pages/LoginSignup/Relative/LoginPage";
+import SignupPage1 from "./Pages/LoginSignup/Relative/SignupPage";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
 import "./App.css";
 import Relative from "./Interfaces/Relative/Relative";
 import NotFound from "./components/NotFound";
-import HomePage from "./pages/HomePage/HomePage";
 import PatientDetails from "./Interfaces/Admin/PatientDetails";
 import VideoChat from "./components/VideoChat";
 import Create from "./Interfaces/Admin/Create";
@@ -35,16 +32,12 @@ function App() {
       <Route exact path="/relative/login" element={<LoginPage1 />} />
       <Route exact path="/" element={<HomePage />} />
       <Route exact path="/create" element={<Create />} />
-        <Route exact path="/view" element={<View />} />
-        <Route exact path="/edit/:name/:id" element={<Edit />} />
-        <Route
-          exact
-          path="/view/:name/:id"
-          element={<PatientDetails/>}
-        />
-        <Route exact path="/enrolled" element={<Enrolled />} />
-        <Route exact path="/relative" element={<Relative />} />
-      <Route exact path="/view/:name/:id" element={<PatientDetails />} />
+      <Route exact path="/view" element={<View />} />
+      <Route exact path="/edit/:name/:id" element={<Edit />} />
+      <Route exact path="/view/:name/:id" element={<PatientDetails/>}/>
+      <Route exact path="/enrolled" element={<Enrolled />} />
+      <Route exact path="/relative" element={<Relative />} />
+      <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
       <Route exact path="/relative/chat" element={<Chat1 />} />

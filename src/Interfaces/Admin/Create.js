@@ -3,23 +3,17 @@ import { useState } from "react";
 import { Grid, Typography, FilledInput, Button, Box } from "@mui/material";
 import { makeStyles } from "@material-ui/styles";
 import HeaderAdmin from "./HeaderAdmin";
-import create from "../../Assets/create.jpg";
 import swal from "sweetalert";
 import axios from "axios";
 
 const useStyles = makeStyles(() => ({
   inputTitles: {
     fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "25px",
+    fontWeight: "800",
+    fontSize: "20px",
     lineHeight: "30px",
     marginRight: "50px",
   },
-  // grid: {
-  //   backgroundImage: "url(" + create + ")",
-  //   backgroundRepeat: "no-repeat",
-  //   backgroundSize: "cover",
-  // },
 }));
 
 const Create = () => {
@@ -112,7 +106,7 @@ const Create = () => {
           </Typography>
         </Grid>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 3 }}>
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>Name</Typography>
             </Grid>
@@ -133,10 +127,10 @@ const Create = () => {
                 style={{ width: "250px" }}
               />
             </Grid>
-          </Grid>
+          </Grid>   
 
-          <Grid container direction="row" marginBottom={5}>
-            <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
+          <Grid container marginBottom={5}>
+            <Grid item sm={6} md={3} style={{ marginLeft: "46px", display:"block" }}>
               <Typography className={classes.inputTitles}>
                 Date Of Birth
               </Typography>
@@ -158,7 +152,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>
                 Room Number Alloted
@@ -182,7 +176,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>Allergies</Typography>
             </Grid>
@@ -204,7 +198,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>Medicines</Typography>
             </Grid>
@@ -226,7 +220,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>
                 Health Status
@@ -250,7 +244,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>
                 Appointments
@@ -274,7 +268,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>Food</Typography>
             </Grid>
@@ -296,7 +290,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>Photo</Typography>
             </Grid>
@@ -315,7 +309,7 @@ const Create = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction="row" marginBottom={5}>
+          <Grid container marginBottom={5}>
             <Grid item sm={6} md={3} style={{ marginLeft: "46px" }}>
               <Typography className={classes.inputTitles}>
                 Relatives Known
@@ -340,9 +334,6 @@ const Create = () => {
           </Grid>
           <Button
             type="submit"
-            // onClick={()=>{
-            //   swal("Done!", "Patient data saved successfully!", "success");
-            // }}
             variant="contained"
             sx={{ ml: 2, mt: 2, mb: 1 }}
             style={{
