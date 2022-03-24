@@ -10,7 +10,7 @@
 .right-box{
     min-height: 100vh;
     min-width: 35vw;
-    background-color:white;
+    background-color:#019267;
     
 }
 .left-box{
@@ -21,9 +21,8 @@
 .box{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 .illustration{
     width: 430px;

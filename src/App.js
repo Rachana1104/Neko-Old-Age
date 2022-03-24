@@ -14,11 +14,9 @@ import NotFound from "./components/NotFound";
 import HomePage from "./pages/HomePage/HomePage";
 import PatientDetails from "./Interfaces/Admin/PatientDetails";
 import VideoChat from "./components/VideoChat";
-import HomePage from "./Pages/HomePage/HomePage";
 import Create from "./Interfaces/Admin/Create";
 import View from "./Interfaces/Admin/View";
 import Edit from "./Interfaces/Admin/Edit";
-import PatientDetails from "./Interfaces/Admin/PatientDetails";
 import Enrolled from "./Interfaces/Admin/Enrolled";
 
 function App() {
@@ -46,10 +44,11 @@ function App() {
         />
         <Route exact path="/enrolled" element={<Enrolled />} />
         <Route exact path="/relative" element={<Relative />} />
-      <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/view/:name/:id" element={<PatientDetails />} />
       <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
+      <Route exact path="/relative/chat" element={<Chat1 />} />
+      <Route exact path="/admin/chat" element={<Chat />} />
       </Routes>
       </Router>
     </div>
