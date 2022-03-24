@@ -15,6 +15,9 @@ import Create from "./Interfaces/Admin/Create";
 import View from "./Interfaces/Admin/View";
 import Edit from "./Interfaces/Admin/Edit";
 import Enrolled from "./Interfaces/Admin/Enrolled";
+import HomePage from './Pages/HomePage/HomePage';
+import Chat from './Interfaces/Admin/Chat';
+import Chat1 from './Interfaces/Relative/Chat';
 
 function App() {
 
