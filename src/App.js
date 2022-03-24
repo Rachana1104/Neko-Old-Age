@@ -40,7 +40,6 @@ function App() {
       <Route exact path="/view/:name/:id" element={<PatientDetails/>}/>
       <Route exact path="/enrolled" element={<Enrolled />} />
       <Route exact path="/relative" element={<Relative />} />
-      <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/videochat" element={<VideoChat />} />
       <Route path="*" element={<NotFound />} />
       <Route exact path="/relative/chat" element={<Chat1 />} />

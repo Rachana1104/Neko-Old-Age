@@ -25,7 +25,7 @@ export default function VideoChat() {
           </Grid>
           <div className="box">
             <Typography style={{ fontSize: "32px" }} textAlign="center">
-              Video Chat Feature to Lessen the Gap between Your Loved Ones
+              Video Chat Feature to Lessen the Gap between You and Your Loved Ones
             </Typography>
 
             <ul style={{ paddingTop: "10px", fontSize: "1.2rem" }}>

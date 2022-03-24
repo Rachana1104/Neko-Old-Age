@@ -90,7 +90,7 @@ export default function Signup() {
       <Container
         data-aos="fade-up"
         maxWidth="xs"
-        style={{paddingTop:"100px"}}
+        // style={{paddingTop:"100px"}}
       >
         <Typography component="h1" variant="h5">
           Sign up

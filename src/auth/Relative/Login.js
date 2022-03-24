@@ -13,13 +13,11 @@ import {
 import { MdEmail, MdVisibility, MdVisibilityOff } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [setLoading] = useState(true);
-  
- 
+
   const [values, setValues] = useState({
     password: "",
     email: "",
@@ -28,8 +26,8 @@ export default function Login() {
   });
 
   const handle = () => {
-    localStorage.setItem('id', values.code)
-  }
+    localStorage.setItem("id", values.code);
+  };
 
   const [showCode, setshowCode] = useState(false);
   const handleClickShowCode = () => {
@@ -92,12 +90,11 @@ export default function Login() {
     }
   }
 
- 
   return (
     <>
       <Container
-     data-aos="fade-up"
-     style={{paddingTop:"100px"}}
+        data-aos="fade-up"
+        //  style={{paddingTop:"100px"}}
         maxWidth="xs"
       >
         <Typography component="h1" variant="h5">
@@ -200,7 +197,12 @@ export default function Login() {
             >
               Login
             </Button>
-            <Typography marginLeft="40px" variant="h5" textAlign="center">Don't have an Account? <Link style={{textDecoration:"none"}} to="/relative/signup">Signup</Link></Typography>
+            <Typography marginLeft="40px" variant="h5" textAlign="center">
+              Don't have an Account?{" "}
+              <Link style={{ textDecoration: "none" }} to="/relative/signup">
+                Signup
+              </Link>
+            </Typography>
           </Grid>
         </Box>
       </Container>

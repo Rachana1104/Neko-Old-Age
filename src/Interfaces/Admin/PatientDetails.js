@@ -89,7 +89,7 @@ export default function PatientDetails() {
                 <Grid item xs={12} sm={12} md={12} lg={12}>
 
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px"}}>
+                  <Card sx={{ display: "flex", marginBottom:"20px"}}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -103,17 +103,17 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"100px"}}>
                         <Typography variant="h4">Health Status</Typography>
                         <Typography variant="h5">{card.healthstatus}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <GiHealthNormal size={60}/>
+                    <GiHealthNormal size={60} style={{paddingLeft:"250px"}}/>
                     </div>
                   </Card>
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px" }}>
+                  <Card sx={{ display: "flex", marginBottom:"20px" }}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -127,17 +127,17 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"70px"}}>
                         <Typography variant="h4">Food</Typography>
                         <Typography variant="h5">{card.food}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <BiFoodMenu size={60}/>
+                    <BiFoodMenu size={60} style={{paddingLeft:"333px"}}/>
                     </div>
                   </Card>
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px" }}>
+                  <Card sx={{ display: "flex", marginBottom:"20px" }}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -151,17 +151,17 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"70px"}}>
                         <Typography variant="h4">Medicines</Typography>
                         <Typography variant="h5">{card.medicine}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <GiMedicines size={60}/>
+                    <GiMedicines size={60} style={{paddingLeft:"250px"}}/>
                     </div>
                   </Card>
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px" }}>
+                  <Card sx={{ display: "flex", marginBottom:"20px" }}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -175,17 +175,17 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"70px"}}>
                         <Typography variant="h4">Appointment</Typography>
                         <Typography variant="h5">{card.appointment}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <AiFillSchedule size={60}/>
+                    <AiFillSchedule size={60} style={{paddingLeft:"210px"}}/>
                     </div>
                   </Card>
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px" }}>
+                  <Card sx={{ display: "flex", marginBottom:"20px" }}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -199,13 +199,13 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"70px"}}>
                         <Typography variant="h4">Allergies</Typography>
                         <Typography variant="h5">{card.allergies}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <FaAllergies size={60}/>
+                    <FaAllergies size={60} style={{paddingLeft:"270px"}}/>
                     </div>
                   </Card>
 
@@ -258,7 +258,7 @@ export default function PatientDetails() {
                     </div>
                   </Card>
 
-                  <Card sx={{ display: "flex", justifyContent:"space-between", marginBottom:"20px" }}>
+                  <Card sx={{ display: "flex", marginBottom:"20px" }}>
                     <CardMedia
                       component="img"
                       sx={{ width: 100 }}
@@ -272,13 +272,13 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"140px"}}>
                         <Typography variant="h4">Date of Birth</Typography>
                         <Typography variant="h5">{card.dob}</Typography>
                       </CardContent>
                     </Box>
                     <div style={{marginTop:"20px", marginRight:"20px"}}>
-                    <FaBirthdayCake size={60}/>
+                    <FaBirthdayCake size={60} style={{paddingLeft:"270px"}}/>
                     </div>
                   </Card>
 

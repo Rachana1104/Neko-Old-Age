@@ -95,7 +95,7 @@ export default function Login() {
         // transition={{ type: "spring", stiffness: 40 }}
         // initial={{ x: "-100vw" }}
         // animate={{ x: 0 }}
-        style={{paddingTop:"100px"}}
+        // style={{paddingTop:"100px"}}
         maxWidth="xs"
       >
         <Typography component="h1" variant="h5">
