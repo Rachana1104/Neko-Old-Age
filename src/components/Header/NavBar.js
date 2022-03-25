@@ -23,12 +23,9 @@ import logo from "../../Assets/logo.jpg";
 const NavBar = (activePage) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [login, setLogin] = React.useState("");
-  const [signup] = React.useState("");
+  // const [login, setLogin] = React.useState("");
+  // const [signup] = React.useState("");
   
-  const handleChange = (event) => {
-    setLogin(event.target.value);
-  };
   const settings = ["Logout"];
   let value = {
     home: false,

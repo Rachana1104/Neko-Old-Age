@@ -28,6 +28,7 @@ const NavAdmin = (activePage) => {
   else if (page === "Enrolled") value.enrolled = true;
   else if (page === "Videochat") value.videochat = true;
   else if (page === "Chat") value.adminchat = true;
+  else if (page === "Logout") value.adminlogout = true;
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -171,7 +172,7 @@ const NavAdmin = (activePage) => {
                 className="headerLinks"
                 to="/"
               >
-                <button disabled={value.adminchat} className="btn">
+                <button disabled={value.adminlogout} className="btn">
                   Logout
                 </button>
               </Link>

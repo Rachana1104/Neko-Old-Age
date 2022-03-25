@@ -25,6 +25,7 @@ const NavRelative = (activePage) => {
   if (page === "Relative") value.relative = true;
   else if (page === "Videochat") value.videochat = true;
   else if (page === "Relativechat") value.relativechat = true;
+  else if (page === "Relativelogout") value.relativelogout = true;
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -150,7 +151,7 @@ const NavRelative = (activePage) => {
                 className="headerLinks"
                 to="/"
               >
-                <button disabled={value.relativechat} className="btn">
+                <button disabled={value.relativelogout} className="btn">
                   Logout
                 </button>
               </Link>
