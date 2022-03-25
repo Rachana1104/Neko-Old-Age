@@ -41,9 +41,9 @@ function App() {
       <Route exact path="/enrolled" element={<Enrolled />} />
       <Route exact path="/relative" element={<Relative />} />
       <Route exact path="/videochat" element={<VideoChat />} />
-      <Route path="*" element={<NotFound />} />
       <Route exact path="/relative/chat" element={<Chat1 />} />
       <Route exact path="/admin/chat" element={<Chat />} />
+      <Route path="*" element={<NotFound />} />
       </Routes>
       </Router>
     </div>

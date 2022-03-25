@@ -103,7 +103,7 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"100px"}}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"75px"}}>
                         <Typography variant="h4">Health Status</Typography>
                         <Typography variant="h5">{card.healthstatus}</Typography>
                       </CardContent>
@@ -223,7 +223,7 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingRight:"120px"}}>
                         <Typography variant="h4">Alloted Room Number</Typography>
                         <Typography variant="h5">{card.roomno}</Typography>
                       </CardContent>
@@ -248,7 +248,7 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingRight:"130px"}}>
                         <Typography variant="h4">Registered Relatives</Typography>
                         <Typography variant="h5">{card.relatives}</Typography>
                       </CardContent>
@@ -272,7 +272,7 @@ export default function PatientDetails() {
                         justifyContent: "space-evenly",
                       }}
                     >
-                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"140px"}}>
+                      <CardContent sx={{ flex: "1 0 auto" }} style={{paddingLeft:"70px"}}>
                         <Typography variant="h4">Date of Birth</Typography>
                         <Typography variant="h5">{card.dob}</Typography>
                       </CardContent>

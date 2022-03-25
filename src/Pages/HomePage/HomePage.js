@@ -70,12 +70,12 @@ export default function HomePage() {
                 onChange={handleChange}
                 style={{ backgroundColor: "#ffc619" }}
               >
-                <Link to="/loginforadmin" style={{ textDecoration: "none" }}>
+                <Link to="/admin/login" style={{ textDecoration: "none" }}>
                   <MenuItem value={10} style={{ color: "black" }}>
                     Admin
                   </MenuItem>
                 </Link>
-                <Link to="/loginforrelative" style={{ textDecoration: "none" }}>
+                <Link to="/relative/login" style={{ textDecoration: "none" }}>
                   <MenuItem value={20} style={{ color: "black" }}>
                     Relative
                   </MenuItem>
@@ -102,13 +102,13 @@ export default function HomePage() {
                 onChange={handleChange}
                 style={{ backgroundColor: "#ffc619" }}
               >
-                <Link to="/signupforadmin" style={{ textDecoration: "none" }}>
+                <Link to="/admin/signup" style={{ textDecoration: "none" }}>
                   <MenuItem value={10} style={{ color: "black" }}>
                     Admin
                   </MenuItem>
                 </Link>
                 <Link
-                  to="/signupforrelative"
+                  to="/relative/signup"
                   style={{ textDecoration: "none" }}
                 >
                   <MenuItem value={20} style={{ color: "black" }}>

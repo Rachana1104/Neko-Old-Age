@@ -9,7 +9,7 @@ import axios from "axios";
 const useStyles = makeStyles(() => ({
   inputTitles: {
     fontStyle: "normal",
-    fontWeight: "800",
+    fontWeight: "500",
     fontSize: "20px",
     lineHeight: "30px",
     marginRight: "50px",

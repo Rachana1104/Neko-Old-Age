@@ -119,7 +119,7 @@ export default function View() {
                         component="img"
                         height="340"
                         image={card.photo}
-                        style={{justifyContent:"center", marginLeft:"55px"}}
+                        style={{justifyContent:"center", marginLeft:"69px"}}
                         className='comImg'
                       />
                       <CardContent>

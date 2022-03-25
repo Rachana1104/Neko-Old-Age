@@ -14,20 +14,17 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-const NavAdmin = (activePage) => {
+const NavRelative = (activePage) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   let value = {
-    create: false,
-    view: false,
-    enrolled: false,
-    verify: false,
+    relative: false,
+    videochat: false,
+    relativechat: false,
   };
   let page = activePage.activePage.activePage;
-  if (page === "Create") value.create = true;
-  else if (page === "View") value.view = true;
-  else if (page === "Enrolled") value.enrolled = true;
+  if (page === "Relative") value.relative = true;
   else if (page === "Videochat") value.videochat = true;
-  else if (page === "Chat") value.adminchat = true;
+  else if (page === "Relativechat") value.relativechat = true;
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -60,7 +57,7 @@ const NavAdmin = (activePage) => {
       style={{ backgroundColor: "white", height: "100%" }}
     >
       <List>
-        {["Create", "View", "Enrolled", "VideoChat","AdminChat"].map((text,index) => (
+        {["Relative", "Videochat", "Relative/Chat"].map((text,index) => (
           <Link className="headerLinks" to={`/${text.toLowerCase()}`} key={index}>
             <ListItem button key={text}>
               <ListItemIcon>
@@ -125,31 +122,13 @@ const NavAdmin = (activePage) => {
             style={{ justifyContent: "center" }}
           >
             <span className="navLinks">
-              <Link disabled={value.create} className="headerLinks" to="/create">
-                <button disabled={value.create} className="btn">
-                  Create
+              <Link disabled={value.relative} className="headerLinks" to="/relative">
+                <button disabled={value.relative} className="btn">
+                  Relative
                 </button>
               </Link>
               <Link
-                disabled={value.view}
-                className="headerLinks"
-                to="/view"
-              >
-                <button disabled={value.view} className="btn">
-                  View
-                </button>
-              </Link>
-              <Link
-                disabled={value.enrolled}
-                className="headerLinks"
-                to="/enrolled"
-              >
-                <button disabled={value.enrolled} className="btn">
-                  Enrolled
-                </button>
-              </Link>
-              <Link
-                disabled={value.enrolled}
+                disabled={value.chat}
                 className="headerLinks"
                 to="/videochat"
               >
@@ -158,20 +137,20 @@ const NavAdmin = (activePage) => {
                 </button>
               </Link>
               <Link
-                disabled={value.enrolled}
+                disabled={value.chat}
                 className="headerLinks"
-                to="/admin/chat"
+                to="/relative/chat"
               >
-                <button disabled={value.adminchat} className="btn">
+                <button disabled={value.relativechat} className="btn">
                   Chat
                 </button>
               </Link>
               <Link
-                disabled={value.enrolled}
+                disabled={value.chat}
                 className="headerLinks"
                 to="/"
               >
-                <button disabled={value.adminchat} className="btn">
+                <button disabled={value.relativechat} className="btn">
                   Logout
                 </button>
               </Link>
@@ -182,4 +161,4 @@ const NavAdmin = (activePage) => {
     </AppBar>
   );
 };
-export default NavAdmin;
+export default NavRelative;
