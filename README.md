@@ -26,7 +26,7 @@ Frontend: React js<br>
 Backend: Django
 <h1>Solution </h1>
 Website : (https://classy-babka-1a3968.netlify.app/)<br>
-<img src="https://user-images.githubusercontent.com/80094199/160225782-d4d60d1a-87ec-434c-b511-16a89823426a.png">
+<img src="![Screenshot (43)](https://user-images.githubusercontent.com/80094199/160228944-e07f0834-9fbb-49e5-8c6d-aee68926897d.png)">
 <img src="https://user-images.githubusercontent.com/80119277/160217099-e06dcb45-6856-467b-b665-5c94f6da565d.jpeg">
 <img src="https://user-images.githubusercontent.com/80119277/160217173-f9add4e1-8ea4-4519-8e7e-a382ff74e6ed.jpeg">
 <img src="https://user-images.githubusercontent.com/80119277/160217201-bef69bf4-411d-4de5-a05a-882b43f1878d.jpeg">
