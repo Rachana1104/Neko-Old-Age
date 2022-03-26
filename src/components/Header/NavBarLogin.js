@@ -143,11 +143,11 @@ const NavBarLogin = (activePage) => {
                   onChange={handleChange}
                   style={{ backgroundColor:"#ffc619" }}
                 >
-                  <Link to="/loginforadmin" style={{ textDecoration: "none" }}>
+                  <Link to="/admin/login" style={{ textDecoration: "none" }}>
                     <MenuItem value={10} style={{color:"black"}}>Admin</MenuItem>
                   </Link>
                   <Link
-                    to="/loginforrelative"
+                    to="/relative/login"
                     style={{ textDecoration: "none" }}
                   >
                     <MenuItem value={20} style={{color:"black"}}>Relative</MenuItem>

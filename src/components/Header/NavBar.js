@@ -25,7 +25,7 @@ const NavBar = (activePage) => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   // const [login, setLogin] = React.useState("");
   // const [signup] = React.useState("");
-  
+
   const settings = ["Logout"];
   let value = {
     home: false,
@@ -106,7 +106,8 @@ const NavBar = (activePage) => {
 
   return (
     <AppBar
-      style={{ background: "transparent", boxShadow: "none",backgroundColor:"#FFD365" }}
+      // style={{ background: "transparent", boxShadow: "none",backgroundColor:"#FFD365" }}
+      className="navbar-glass"
       position="sticky"
     >
       <Container maxWidth="l">
@@ -170,11 +171,22 @@ const NavBar = (activePage) => {
           </Typography>
           <Box
             sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }}
-            style={{justifyContent:"right", zIndex:"-1.5rem", paddingRight:"50px" }}
+            style={{
+              justifyContent: "right",
+              zIndex: "-1.5rem",
+              paddingRight: "50px",
+            }}
           >
-            <span className="navLinks" style={{ whiteSpace:"nowrap", display:"flex", flexDirection:"row" }}>
-              <Link disabled={value.home}  to="/">
-                <button disabled={value.home} className="btn">
+            <span
+              className="navLinks"
+              style={{
+                whiteSpace: "nowrap",
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <Link disabled={value.home} to="/">
+                <button disabled={value.home} className="home">
                   Home
                 </button>
               </Link>
@@ -183,9 +195,8 @@ const NavBar = (activePage) => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="btn">Donate</button>
+                <button className="home">Donate</button>
               </a>
-              
             </span>
           </Box>
 
