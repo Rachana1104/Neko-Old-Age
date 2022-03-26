@@ -25,15 +25,14 @@ The relative can keep track of health conditions of their member, also if the re
 Frontend: React js<br>
 Backend: Django
 <h1>Solution </h1>
-Website : (https://classy-babka-1a3968.netlify.app/)<br>
-<img src="https://user-images.githubusercontent.com/80094199/160228944-e07f0834-9fbb-49e5-8c6d-aee68926897d.png">
-<img src="https://user-images.githubusercontent.com/80119277/160217099-e06dcb45-6856-467b-b665-5c94f6da565d.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217173-f9add4e1-8ea4-4519-8e7e-a382ff74e6ed.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217201-bef69bf4-411d-4de5-a05a-882b43f1878d.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217279-4afe2388-2037-43c8-bea0-68dd82453142.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217282-3ad42fbf-af90-440a-abe2-4da79b346f88.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217286-a91cbb6f-9b7a-493c-9e5d-7b6cb5380184.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217450-7848ba61-661a-4b45-a7f2-6a0201151a4f.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217295-d73fe716-6a80-4147-906f-dc657631b518.jpeg">
-<img src="https://user-images.githubusercontent.com/80119277/160217299-d6649d45-f5b3-4f13-a6db-0fa8761dd6e0.jpeg">
+<img src="https://user-images.githubusercontent.com/87826210/160251113-0476fd02-3f3e-46ff-ad25-df3a2e305d05.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251158-0a6d8e80-55d0-4a4d-a29b-81d5b2640db7.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251217-4023604c-791a-4290-8dd3-881bf3a4d2fa.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251246-69aa0fa6-26d3-4ecd-935c-26c4221742cd.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251265-52567b04-60f2-4a78-b229-df7b80f0de64.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251280-f030fb5d-db5e-4a99-b95a-00ffbfb8f261.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251302-438b31a2-31cd-432e-b179-5f835473e4a4.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251348-b427de8b-fd2e-485f-b988-18742a8e5e5c.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251379-8bf75e3c-ff82-4516-b66f-bf4339baba41.png">
+<img src="https://user-images.githubusercontent.com/87826210/160251412-8d4e4222-b054-4246-ad45-ee73392013f9.png">
 
