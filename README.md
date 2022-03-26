@@ -25,16 +25,15 @@ The relative can keep track of health conditions of their member, also if the re
 Frontend: React js<br>
 Backend: Django
 <h1>Solution </h1>
-Website : (https://classy-babka-1a3968.netlify.app/)<br><table><tr>
-<td><img src="https://user-images.githubusercontent.com/80094199/160225782-d4d60d1a-87ec-434c-b511-16a89823426a.png"></td>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217099-e06dcb45-6856-467b-b665-5c94f6da565d.jpeg"></td></tr>
-<tr><td><img src="https://user-images.githubusercontent.com/80119277/160217173-f9add4e1-8ea4-4519-8e7e-a382ff74e6ed.jpeg"></td>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217201-bef69bf4-411d-4de5-a05a-882b43f1878d.jpeg"></td></tr>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217279-4afe2388-2037-43c8-bea0-68dd82453142.jpeg"></td>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217282-3ad42fbf-af90-440a-abe2-4da79b346f88.jpeg"></td></tr>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217286-a91cbb6f-9b7a-493c-9e5d-7b6cb5380184.jpeg"></td>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217450-7848ba61-661a-4b45-a7f2-6a0201151a4f.jpeg"></td></tr>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217295-d73fe716-6a80-4147-906f-dc657631b518.jpeg"></td>
-<td><img src="https://user-images.githubusercontent.com/80119277/160217299-d6649d45-f5b3-4f13-a6db-0fa8761dd6e0.jpeg"></td>
-</tr>
-</table>
+Website : (https://classy-babka-1a3968.netlify.app/)<br>
+<img src="https://user-images.githubusercontent.com/80094199/160225782-d4d60d1a-87ec-434c-b511-16a89823426a.png">
+<img src="https://user-images.githubusercontent.com/80119277/160217099-e06dcb45-6856-467b-b665-5c94f6da565d.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217173-f9add4e1-8ea4-4519-8e7e-a382ff74e6ed.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217201-bef69bf4-411d-4de5-a05a-882b43f1878d.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217279-4afe2388-2037-43c8-bea0-68dd82453142.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217282-3ad42fbf-af90-440a-abe2-4da79b346f88.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217286-a91cbb6f-9b7a-493c-9e5d-7b6cb5380184.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217450-7848ba61-661a-4b45-a7f2-6a0201151a4f.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217295-d73fe716-6a80-4147-906f-dc657631b518.jpeg">
+<img src="https://user-images.githubusercontent.com/80119277/160217299-d6649d45-f5b3-4f13-a6db-0fa8761dd6e0.jpeg">
+
