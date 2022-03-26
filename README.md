@@ -19,11 +19,11 @@ In old aged homes, the relatives of the people are not updated about their paren
 <h1>What makes us different : </h1>
 Our web app has some differentiating features such as video chat between relative and the old aged as well as text chat between the admin and the relative. Every old aged has a unique token, so any random person cannot access details.
 <h1>Description : Neko Old Age Home </h1>
-Neko Old Age Home is a non profitable web app aiming to keep the bond between the old aged and their relative alive even after they leave them in ols age home age.
-The relative can keep track of health conditions of their parent. also if the relative wants to communicate with its parent they have an option of video chat using which even if they are far away from theie loved ones, they can have a conversation. All the updates about the old aged people are reflected on the website which are updated by admin from time to time. Evey resident from the old age home have a unique token, so any random person can not access details. Also if any user/non-user wants to donate to the old age home, thay can do so. 
+Neko Old Age Home is a non profitable web app aiming to keep the bond between the old aged and their relative even after they leave them in old age home age.
+The relative can keep track of health conditions of their member, also if the relative wants to communicate with its member they have an option of video chat using which even if they are far away from their loved ones, they can have a conversation. All the updates about the old aged people are reflected on the website which are updated by admin from time to time. Every resident from the old age home have a unique token, so any random person can not access details of the member in the old age home. Also if any user/non-user wants to donate fund to the old age home, they can do so. 
 <h1>Tech Stacks used : </h1>
-React js<br>
-Django
+Frontend: React js<br>
+Backend: Django
 <h1>Solution </h1>
 Website : (https://classy-babka-1a3968.netlify.app/)<br><table><tr>
 <td><img src="https://user-images.githubusercontent.com/80119277/160216783-b8736fbc-76b3-4d3f-8392-2c5030b30933.jpeg"></td>
